@@ -8,7 +8,7 @@ const Navigation = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg" style={navBarStyle}>
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             React Js
@@ -27,19 +27,19 @@ const Navigation = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link active" activeClassname='active' exact = "true" to="/"> Home</NavLink>
+                <NavLink className="nav-link active"  exact = "true" to="/"> Home</NavLink>
                 {/* <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a> */}
               </li>
               <li className="nav-item">
-              <NavLink className="nav-link "   activeClassname='active' to="/about-us"> About Us</NavLink>
+              <NavLink className="nav-link "    to="/about-us"> About Us</NavLink>
                 {/* <a className="nav-link" href="/">
                   About Us
                 </a> */}
               </li>
               <li className="nav-item">
-              <NavLink className="nav-link "   activeClassname='active' to="/contact-us"> Contact Us</NavLink>
+              <NavLink className="nav-link "    to="/contact-us"> Contact Us</NavLink>
                 {/* <a className="nav-link" href="/">
                   Contact Us
                 </a> */}

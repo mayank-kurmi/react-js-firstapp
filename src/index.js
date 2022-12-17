@@ -18,10 +18,10 @@ const configRouting = (
       <Navigation />
       <div className="container-fluid vh-100">
         <div className="row vh-100">
-          <div className="col-1 vh-100">
+          {/* <div className="col-1 vh-100">
             <SideBar />
-          </div>
-          <div className="col-10 vh-100">
+          </div> */}
+          <div className="col-12 vh-100">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about-us" element={<AboutUs />} />
