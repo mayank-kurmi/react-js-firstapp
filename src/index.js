@@ -12,6 +12,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 
 import EventHandlers from "./pages/EventHandlers";
+import UserSignUpForm from "./pages/FormValidations/UserSignUpForm";
 
 const configRouting = (
   <Router>
@@ -28,6 +29,7 @@ const configRouting = (
               <Route path="/about-us" element={<AboutUs />} />
               <Route path="/contact-us" element={<Contact />} />
               <Route path="/products" element={<EventHandlers />} />
+              <Route path="/sign-up" element={<UserSignUpForm />} />
             </Routes>
           </div>
         </div>

@@ -32,36 +32,30 @@ const Navigation = () => {
                   {" "}
                   Home
                 </NavLink>
-                {/* <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a> */}
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link active" to="/about-us">
                   {" "}
                   About Us
                 </NavLink>
-                {/* <a className="nav-link" href="/">
-                  About Us
-                </a> */}
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link active" to="/contact-us">
                   {" "}
                   Contact Us
                 </NavLink>
-                {/* <a className="nav-link" href="/">
-                  Contact Us
-                </a> */}
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link active" to="/products">
                   {" "}
                   Products
                 </NavLink>
-                {/* <a className="nav-link" href="/">
-                  Contact Us
-                </a> */}
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link active" to="/sign-up">
+                  {" "}
+                  Sign-Up
+                </NavLink>
               </li>
             </ul>
             {/* <form className="d-flex" role="search">
@@ -81,7 +75,7 @@ const Navigation = () => {
             <a className="text-reset " href="#">
               <i className="bi bi-cart"></i>
               <span className="badge rounded-pill badge-notification bg-danger">
-                1
+                {/* 122 */}
               </span>
             </a>
           </div>
