@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css"
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./index.css";
 
 import SideBar from "./components/SideBar";
@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 
 import EventHandlers from "./pages/EventHandlers";
 import UserSignUpForm from "./pages/FormValidations/UserSignUpForm";
+import ProductsApi from "./pages/ProductsApi";
 
 const configRouting = (
   <Router>
@@ -30,6 +31,7 @@ const configRouting = (
               <Route path="/contact-us" element={<Contact />} />
               <Route path="/products" element={<EventHandlers />} />
               <Route path="/sign-up" element={<UserSignUpForm />} />
+              <Route path="/products-api" element={<ProductsApi />} />
             </Routes>
           </div>
         </div>

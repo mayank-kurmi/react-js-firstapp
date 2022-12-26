@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Products from "./Products";
 
 class EventHandlers extends React.Component {
+  
   state = {
     products: [
       {
@@ -99,6 +101,10 @@ class EventHandlers extends React.Component {
   buyProduct = (product) => {
     debugger;
     console.log(product);
+    let navigate = useNavigate();
+  // Somewhere in your code, e.g. inside a handler:
+    //navigate("/posts"); 
+    navigate("/");
   }
 
   updateProducts = () => {
@@ -325,10 +331,12 @@ class EventHandlers extends React.Component {
   };
 
   render() {
+    //const navigate = useNavigate();
     let products = null;
     products = this.state.products.map((product, index) => {
       return (
         <Products
+          key = {index}
           id={product.id}
           title={product.title}
           description={product.description}

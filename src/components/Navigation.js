@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = (props) => {
   const navBarStyle = {
     backgroundColor: "#e3f2fd",
   };
+
+  //const updateuseState('')
 
   return (
     <div>
@@ -57,6 +59,12 @@ const Navigation = () => {
                   Sign-Up
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link active" to="/products-api">
+                  {" "}
+                  Products-Api
+                </NavLink>
+              </li>
             </ul>
             {/* <form className="d-flex" role="search">
               <input
@@ -74,7 +82,7 @@ const Navigation = () => {
             {/* <!-- Icon --> */}
             <a className="text-reset " href="#">
               <i className="bi bi-cart"></i>
-              <span className="badge rounded-pill badge-notification bg-danger">
+              <span className="badge rounded-pill badge-notification bg-danger">1
                 {/* 122 */}
               </span>
             </a>

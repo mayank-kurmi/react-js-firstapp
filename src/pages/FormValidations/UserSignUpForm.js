@@ -112,6 +112,7 @@ class UserSignUpForm extends React.Component {
             <label>Name</label>
             <input
               type="text"
+              autoFocus 
               className="form-control"
               name="name"
               value={this.state.name}
